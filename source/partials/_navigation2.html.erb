@@ -1,0 +1,28 @@
+<div id="wrapper">
+  <nav class="nav-extended nav-fixed white">
+    <div class="nav-wrapper">
+      <%= link_to "NLD", "home.html", class: "brand-logo left red-text", id: "brand-logo" %>
+      <a href="/home.html" class="left brand-logo"><img src="/images/logo.png" class="left brand-logo" alt="Logo" /></a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse hide-on-large-only"><i class="material-icons red-text">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><%= link_to "Home", "home.html" %></li>
+        <li><%= link_to "About", "about.html" %></li>
+        <li><%= link_to "Consultant", "consultant.html" %></li>
+        <li><%= link_to "Contact", "contact.html" %></li>
+      </ul>
+    </div>
+    <div class="nav-content">
+      <ul class="tabs tabs-transparent red">
+        <li class="tab"><a href="#test1">Project Description</a></li>
+        <li class="tab"><a href="#test2">Partners</a></li>
+        <li class="tab"><a href="#test3">Project Management</a></li>
+      </ul>
+    </div>
+  </nav>
+  <ul class="side-nav" id="mobile-demo"> <!-- move out of nav for js to work drawer -->
+    <li><%= link_to "Home", "home.html" %></li>
+    <li><%= link_to "About", "about.html" %></li>
+    <li><%= link_to "Consultant", "consultant.html" %></li>
+    <li><%= link_to "Contact", "contact.html" %></li>
+  </ul>
+</div>

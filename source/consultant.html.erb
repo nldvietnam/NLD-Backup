@@ -1,0 +1,30 @@
+<div id="content">
+  <div class="container">
+  	<h5 class="center-align">Consultant Login</h5>
+    <p><br></p>
+  	<p align='center'>You must login to view this page.</p>
+  	<div id='login-block' align="center">
+  	  <span>Login</span>
+  		<div class='clr'></div>
+      <div style="width:320px;">
+  			<p align=center class="text_12_xanh_dam"></p>
+        <form id="login-pan-form" method="post" action="/login.htm" accept-charset="utf-8">
+          <div style="display:none;">
+            <input type="hidden" name="_method" value="POST" />
+          </div>
+          <div class="input text">
+            <label for="MemberUsername">Username</label>
+            <input name="data[Member][username]" type="text" id="MemberUsername" />
+          </div>
+          <div class="input password">
+            <label for="MemberPassword">Password</label>
+            <input type="password" name="data[Member][password]" id="MemberPassword" />
+          </div>
+          <div class="submit">
+            <input type="submit" value="Log in" />
+          </div>
+        </form>
+      </div>
+  	</div>
+  </div>
+</div>
